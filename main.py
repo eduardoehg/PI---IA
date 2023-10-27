@@ -4,7 +4,7 @@ import re
 class DetectorPhishing:
     def __init__(self, palavras_chave):
         self.palavras_chave = palavras_chave
-        self.nlp = spacy.load("en_core_web_sm")
+        self.nlp = spacy.load('pt_core_news_sm')
 
     def checar_phishing(self, email):
         doc = self.nlp(email)
